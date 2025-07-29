@@ -5,6 +5,6 @@
  their sum as a float.
 '''
 
-
+'''class that take 2 int as float and return a float'''
 def add(a: float, b: float) -> float:
     return a + b
