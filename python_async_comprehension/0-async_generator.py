@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 '''async generator'''
 
-import asyncio, random
+
+import asyncio
+import random
 from typing import async_generator
+
 
 async def async_generator() -> async_generator[float, None]:
     '''async genrator'''
