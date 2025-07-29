@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
-'''complex types - functions'''
+''' make_multiplier function '''
 
 
-def make_multiplier(multiplier: float):
-    '''complex types'''
-    return (float ** multiplier)
+from typing import Callable
+
+
+def make_multiplier(multiplier: float) -> Callable[[float], float]:
+    ''' make_multiplier '''
+    def mul_function(val: float) -> float:
+        return multiplier * val
+    return mul_function
