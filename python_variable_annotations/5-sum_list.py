@@ -5,7 +5,7 @@
 from typing import List
 
 
-def sum_list(input_lists: list[float]) -> float:
+def sum_list(input_lists: List[float]) -> float:
     '''sum of a list'''
     sum = 0
     for item in input_lists:
