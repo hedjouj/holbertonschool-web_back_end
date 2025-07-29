@@ -5,4 +5,4 @@
 
 def to_str(n: float) -> str:
     '''return str of the float'''
-    return str(float)
+    return str(n)
