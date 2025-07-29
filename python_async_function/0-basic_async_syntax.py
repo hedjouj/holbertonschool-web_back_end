@@ -5,7 +5,7 @@
 import asyncio, random
 
 
-async def max_delay(int = 10):
+async def max_delay(int = 10) -> float:
     '''async function syntax'''
     await asyncio.sleep(0, max_delay)
-    return max_delay(float)
+    return max_delay
