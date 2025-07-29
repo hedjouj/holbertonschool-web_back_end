@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-'''The basics of async'''
+''' wait '''
 
 
-import asyncio, random
+import random
+import asyncio
 
 
-async def max_delay(int = 10) -> float:
-    '''async function syntax'''
-    await asyncio.sleep(0, max_delay)
-    return max_delay
+async def wait_random(max_delay: int = 10) -> float:
+    '''wait a random of time'''
+    wait: float = random.uniform(0, max_delay)
+    await asyncio.sleep(wait)
+    return wait
