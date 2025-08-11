@@ -6,10 +6,10 @@ Main file
 
 import csv
 import math
-from typing import List
+from typing import List, Tuple
 
 
-def index_range(page: int, page_size: int) -> tuple:
+def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """function that return two int arg"""
     start_index = (page -1) * page_size
     end_index = start_index + page_size
