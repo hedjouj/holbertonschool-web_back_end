@@ -6,4 +6,4 @@
 
 def index_range(page: int, page_size: int) -> int:
     """function that return two int arg"""
-    return(tuple[1:7])
+    return(tuple)
