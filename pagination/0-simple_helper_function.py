@@ -4,6 +4,7 @@
 """
 
 
-def index_range(page: int, page_size: int) -> int:
+def index_range(page: int, page_size: int) -> tuple:
     """function that return two int arg"""
-    return(index_range[0:-1])
+    tuple = (page - 1) * page_size, page * page_size
+    return tuple
