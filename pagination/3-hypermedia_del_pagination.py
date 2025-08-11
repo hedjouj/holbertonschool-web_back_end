@@ -37,7 +37,7 @@ class Server:
         """
         Return deletion-resilient hypermedia pagination info.
         """
-        assert isinstance(index, int) and index >= 0, "index must be a non-negative integer"
+        assert isinstance(index, int) and index >= 0
         indexed_data = self.indexed_dataset()
         assert index < len(indexed_data), "index out of range"
 
@@ -46,7 +46,9 @@ class Server:
         collected = 0
 
         # Collect page_size elements, skipping missing indexes
-        while collected < page_size and current_index < max(indexed_data.keys()) + 1:
+        last_key = max(indexed_data.keys()) + 1
+        while (collected < page_size
+               and current_index < last_key):
             if current_index in indexed_data:
                 data.append(indexed_data[current_index])
                 collected += 1
