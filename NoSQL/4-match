@@ -1,2 +1,2 @@
 //list all document with certain name
-db.school.distinc("Holberton School")
+db.school.find({ name: "Holberton school" }).pretty();
