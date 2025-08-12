@@ -4,7 +4,6 @@ Provides some stats about Nginx logs stored in MongoDB.
 Database: logs
 Collection: nginx
 """
-
 from pymongo import MongoClient
 
 
