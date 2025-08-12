@@ -5,4 +5,4 @@ from pymongo import MongoClient
 
 def list_all(mongo_collection):
     """return a list"""
-    return list(mongo_collection.find())
+    return mongo_collection.find({})
