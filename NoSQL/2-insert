@@ -1,3 +1,5 @@
-//insert a document
+// command to use/create a datatable
 db.createCollection("school")
-db.school.insert({ name: "Holberton School" })
+db.school.insert({
+    name: "Holberton school"
+})
