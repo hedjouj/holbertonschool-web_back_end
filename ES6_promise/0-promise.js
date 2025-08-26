@@ -1,10 +1,10 @@
 export default function getResponseFromAPI() {
     const maPromesse = new Promise((resolve, reject) => {
         if (everythingisok) {
-            resolve("Success");
+            resolve("True");
         }
         else {
-            reject("Error");
+            reject("False");
         }
     });
 }
