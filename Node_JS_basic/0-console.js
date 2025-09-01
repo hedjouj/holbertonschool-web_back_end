@@ -1,4 +1,4 @@
 function displayMessage() {
-    console.console.log(displayMessage);
+    console.console.log(process.argv[2]);
     
 }
